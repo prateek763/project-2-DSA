@@ -1,0 +1,98 @@
+Project 1
+
+For the LRU_Cache problem, I have decided to use two data structures for the problem. Dictionary are 
+capable of storink the key and value pair very efficiently, on the other hand lists are efficiently 
+used to store the key for each call. It can very efficiently add and delete the key after each call and
+can remove the first added element, which is basic for the priority construction demanded.
+
+Time and Space complexity:-
+In respects to the limitation of the cache, any hashing approach could reach the time complexity of O(n).
+Finally deciding for this approach that satisfies the O(1) time complexity for each process. As in terms
+of space complexity,the structure requires space allocated to each key and value pair. Hence the space
+complexity of the whole cache is O(n) where n is the size of cache.
+
+Project 2
+
+Here the recursion process finds to be very useful for this problem. The recursive call for each folder
+detects whether it has a file or not and if the file matches the required suffix then it is pushed into
+the list. The given approach was not used as it was not found to be very efficient in perfoming the given
+task.
+
+Time and Space complexity:-
+The time complexity, for this case is very well dependent on the number of function call and the number 
+of iterations in each function call. Thus in this case time complexity is dependent on depth and width 
+of folders, resulting in a O(d*w) where d is the depth of the folder and w is the number of folder in 
+in the directory. As for the space complexity, in this case, it is directly dependent on the number
+of returns the function does, hence, the number of found files f, O(f).
+
+Project 3
+
+The implementation of the Huffmann Algorithm, has consisted as pseudo code tasks were resolved, in the 
+construction of several classes, being:
+
+Node
+Queue
+Tree
+HuffmanEncoder
+This has allowed to have a more encapsulated development, as well as, providing the project with a more 
+consistent structure. The compressing algorithm has shown, for the tested example a reduction of almost 
+50% of its size.
+
+Time and Space complexity:-
+In respects to the study of the time complexity, would be O(Ln), being L the maximum length of a 
+codeword; more references see here. If I had not used a built it function for sorting the input that 
+takes O(n*log(n)); ending up the time complexity being O(n*log(n)). In respects to the space complexity,
+it is directly related to the size of the employed alphabet, in this case k, resulting in O(k).
+
+Project 4
+
+In this case the user can be in any group. Hence all the group needs to be searched for the user name and
+each group has ore groups associated with it, thus a repeated search is needed for this task. Hence 
+recursion is the efficient way for this task to be completed in a smooth manner.
+
+Time and Space complexity:-
+The time complexity of this algorithm is dependant on the number of recursive calls that are made. Thus 
+in this case the worst case time complexity is the case when the user is found in last user of last group
+resulting in a time complexity of O(g*u) where g is the number of group and u the number of user in it.
+As for the space complexity, it is directly dependent on the number of returns the function does, hence,
+in this case O(1).
+
+Project 5
+
+This problem require a linked list structure which needs to accessed backwards. For this task to be 
+completed in an effiecient manner I have developed some methods for the problem:-
+add:-Add the bolck of data in the blockchain and link this block with last block inserted.
+search:-Search the blockchain for the bolck having the given data.
+size:-returns the size of the bolckchain.
+convert_to_list:-Convert the blockchain into a list whose items are itself a list of data,timestamp,hash
+
+Time and Space complexity:-
+For the time complexity, as blockchain behaves as the linked list structure so the time complexity for
+it's respective functions are as follows:-
+
+add: O(1)
+search: O(n)
+size: O(1)
+convert_to_list: O(n)
+For space complexity, it is directly proportional on the number of nodes in the blockchain, hence the
+the space complexity is O(n) where n is the number of nodes.
+
+Project 6
+
+For the union and intersection problem, working with the linked lists was found to be very difficult, 
+thus the lists are used which are easy to manipulate and can be easily searched for a particular item.
+For the removal of duplicates sets are being used in this problem to futher simplify the task.
+
+Time and Space complexity:-
+For the time complexity, the transformation from linked list to list, takes O(n) time complexity and
+for the respective functions:-
+
+Union:- The creation of the final linked list takes n more iteration by which the time complexity for 
+this becomes to be O(n+O(n)), resulting in the final time complexity of O(n) where n is the total number
+of elements in both linked list.
+
+Intersection:- The creation of the final linked list takes n more iteration by which the time complexity for 
+this becomes to be O(n+O(n)), resulting in the final time complexity of O(n) where n is the total number
+of elements in both linked list.
+In respect to the space time complexity, we generate for both functions, 3 and 2 auxiliary lists, thus 
+the space complexity becomes O(n).
